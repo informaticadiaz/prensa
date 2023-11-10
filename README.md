@@ -9,7 +9,8 @@ react-dom
 react-router-dom
 Dependencias de desarrollo
 ```
-El proyecto tiene las siguientes dependencias de desarrollo:
+### El proyecto tiene las siguientes dependencias de desarrollo:
+```bash
 @types/react
 @types/react-dom
 @typescript-eslint/eslint-plugin
@@ -20,20 +21,36 @@ eslint-plugin-react-hooks
 eslint-plugin-react-refresh
 typescript
 vite
-Scripts
-El proyecto tiene los siguientes scripts definidos:
-dev: Inicia el servidor de desarrollo de Vite.
-build: Construye la aplicación para producción.
-lint: Ejecuta ESLint para analizar el código en busca de errores y problemas de estilo.
-preview: Inicia el servidor de desarrollo de Vite con el modo vista previa habilitado.
-Ejecución del proyecto
+````
+### El proyecto tiene los siguientes scripts definidos
+
+#### Uso pnpm
+
+#### Inicia el servidor de desarrollo de Vite.
+```bash
+pnpm dev
+````
+#### Construye la aplicación para producción.
+```bash
+pnpm build
+```
+#### Ejecuta ESLint para analizar el código en busca de errores y problemas de estilo.
+```bash
+pnpm lint
+```
+#### Inicia el servidor de desarrollo de Vite con el modo vista previa habilitado.
+```bash
+pnpm preview
+```
+#### Ejecución del proyecto
 Para ejecutar el proyecto, puedes usar el siguiente comando:
+```bash
+pnpm run dev
+```
 
-npm run dev
+Esto iniciará el servidor de desarrollo de Vite en http://localhost:3000. Puedes abrir esta dirección en tu navegador para ver la aplicación
 
-
-Esto iniciará el servidor de desarrollo de Vite en http://localhost:3000. Puedes abrir esta dirección en tu navegador para ver la aplicación.
-Construcción del proyecto para producción
+#### construcción del proyecto para producción
 Para construir el proyecto para producción, puedes usar el siguiente comando:
 
 npm run build
