@@ -69,6 +69,13 @@ npm run preview
 ```
 Esto iniciará el servidor de desarrollo de Vite con el modo vista previa habilitado. Puedes abrir http://localhost:3000 en tu navegador para ver la aplicación.
 
+#### implementaciones futuras
+
+autenticacion 
+
+
+
+
 
 
 
