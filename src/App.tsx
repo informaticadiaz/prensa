@@ -15,7 +15,6 @@ function App() {
           <img src={logo} className="logo react" alt="logo uf" />
         </a>
       </div>
-      <h1>Herramientas de Prensa</h1>
       <div className="card">
 
         <button className='button'>
@@ -38,9 +37,6 @@ function App() {
           Entrevistas
         </Link>
         </button>
-        <p>
-          Vamos por mas
-        </p>
       </div>
       <p className="read-the-docs">
         Comunicacion Peronista para un sindicato organizado
