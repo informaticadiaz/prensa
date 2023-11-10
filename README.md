@@ -52,25 +52,24 @@ Esto iniciará el servidor de desarrollo de Vite en http://localhost:3000. Puede
 
 #### construcción del proyecto para producción
 Para construir el proyecto para producción, puedes usar el siguiente comando:
-
+```bash
 npm run build
-
-
+```
 Esto creará una carpeta dist que contiene los archivos compilados de la aplicación. Puedes alojar estos archivos en un servidor web para que los usuarios puedan acceder a la aplicación.
-Análisis del código
+#### Análisis del código
 Para analizar el código en busca de errores y problemas de estilo, puedes usar el siguiente comando:
-
+```bash
 npm run lint
-
-
+```
 Esto ejecutará ESLint en todos los archivos .ts y .tsx del proyecto.
-Vista previa de la aplicación
+#### Vista previa de la aplicación
 Para ver una vista previa de la aplicación, puedes usar el siguiente comando:
-
+```bash
 npm run preview
-
-
+```
 Esto iniciará el servidor de desarrollo de Vite con el modo vista previa habilitado. Puedes abrir http://localhost:3000 en tu navegador para ver la aplicación.
+
+
 
 
 
