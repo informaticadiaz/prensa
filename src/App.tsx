@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://react.dev" target="_blank">
+        <a href="http://prensa.ar" target="_blank">
           <img src={logo} className="logo react" alt="logo uf" />
         </a>
       </div>
