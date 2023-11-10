@@ -3,10 +3,12 @@
 Prensa es una aplicación web React que utiliza Vite como herramienta de desarrollo y Typescript para el tipado.
 ### La aplicación tiene las siguientes dependencias:
 
+```bash
 react
 react-dom
 react-router-dom
 Dependencias de desarrollo
+```
 El proyecto tiene las siguientes dependencias de desarrollo:
 @types/react
 @types/react-dom
