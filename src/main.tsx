@@ -6,13 +6,13 @@ import Psa from './Psa.tsx';
 import Revistas from './Revistas.tsx';
 import Entrevistas from './Entrevistas.tsx';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
 import './index.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
