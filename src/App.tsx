@@ -16,27 +16,30 @@ function App() {
         </a>
       </div>
       <div className="card">
-
-        <button className='button'>
+        
         <Link to="/desing" className="button">
-          Diseños
+          <button className='button'>
+            Diseños
+          </button>
         </Link>
-        </button>
-        <button className='button'>
+        
         <Link to="/psa" className="button">
-          PSA
+          <button className='button'>
+            PSA
+          </button>
         </Link>
-        </button>
-        <button className='button'>
-         <Link to="/revistas" className="button">
-          Revistas
+        
+        <Link to="/revistas" className="button">
+          <button className='button'>
+            Revistas
+          </button >
         </Link>
-        </button >
-        <button className='button'>
+        
         <Link to="/entrevistas" className="button">
-          Entrevistas
+          <button className='button'>
+            Entrevistas
+          </button>
         </Link>
-        </button>
       </div>
       <p className="read-the-docs">
         Comunicacion Peronista para un sindicato organizado
