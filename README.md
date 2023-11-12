@@ -47,6 +47,10 @@ Ver los formularios cargados de manera digital por los compañeros
 
 Lugar donde dejar mensajes relacionados a las fechas y actividades donde participara la seccional
 
+#### Gráficos de inflación
+
+gráficos para comparar paritarias vs ipc 
+
 ## Descripcion Tecnica
 
 ### La aplicación tiene las siguientes dependencias
