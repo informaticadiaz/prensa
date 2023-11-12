@@ -17,12 +17,6 @@ function App() {
       </div>
       <div className="card">
         
-        <Link to="/desing" className="button">
-          <button className='button'>
-            Diseños
-          </button>
-        </Link>
-        
         <Link to="/psa" className="button">
           <button className='button'>
             PSA
@@ -34,12 +28,31 @@ function App() {
             Revistas
           </button >
         </Link>
-        
+
         <Link to="/entrevistas" className="button">
           <button className='button'>
             Entrevistas
           </button>
         </Link>
+        
+        <Link to="/podcast" className="button">
+          <button className='button'>
+            Podcast
+          </button>
+        </Link>
+
+        <Link to="/videoteca" className="button">
+          <button className='button'>
+            Videoteca
+          </button> 
+        </Link>
+
+        <Link to="/calendario" className="button">
+          <button className='button'>
+            Calendario
+          </button>
+        </Link>
+
       </div>
       <p className="read-the-docs">
         Comunicacion Peronista para un sindicato organizado

@@ -21,11 +21,17 @@ Bibliotecas de Revistas
 
 Bibliotecas de Videos y Articulos  
 
-#### Podscat
+#### Podcast
 
 Biblioteca de Audios
 
+#### Videoteca
+
+Bibliotecas de Videos
+
 #### Calendario
+
+Calendario con fechas importantes
 
 ### Zona Privada
 

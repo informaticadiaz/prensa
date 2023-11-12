@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import Desing from './Desing.tsx';
-import Psa from './Psa.tsx';
-import Revistas from './Revistas.tsx';
-import Entrevistas from './Entrevistas.tsx';
+import Desing from './pages/Desing.tsx';
+import Psa from './pages/Psa.tsx';
+import Revistas from './pages/Revistas.tsx';
+import Entrevistas from './pages/Entrevistas.tsx';
 import {
   createHashRouter,
   RouterProvider,
