@@ -1,3 +1,16 @@
 .react-calendar {
   background: #242424;;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.react-calendar__navigation__arrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.react-calendar__navigation__label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button > abbr {
+  color: rgba(255, 255, 255, 0.7);
 }
