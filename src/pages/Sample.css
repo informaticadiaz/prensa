@@ -11,6 +11,22 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-button > abbr {
+button {
   color: rgba(255, 255, 255, 0.7);
+}
+
+button:hover{
+  color: black;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: unset;
+}
+
+.react-calendar__tile--now {
+  background: unset;
+}
+
+.react-calendar__tile--now:hover {
+  background: unset;
 }
