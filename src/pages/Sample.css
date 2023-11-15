@@ -30,3 +30,7 @@ button:hover{
 .react-calendar__tile--now:hover {
   background: unset;
 }
+
+.custom-day {
+  background-color: green; /* Cambia el color según tus preferencias */
+}
