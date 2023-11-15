@@ -7,8 +7,14 @@ function Calendario() {
   const [selectedDate, setSelectedDate] = useState(null);
 
   const messagesByDate = {
-    '11-15': '¡Hiciste clic en el 15 de noviembre!',
-    '11-16': '¡Hiciste clic en el 16 de noviembre!',
+    '11-15': {
+      title: '¡Hiciste clic en el 15 de noviembre!',
+      description: 'Descripción para el 15 de noviembre',
+    },
+    '11-16': {
+      title: '¡Hiciste clic en el 16 de noviembre!',
+      description: 'Descripción para el 16 de noviembre',
+    },
     // Puedes agregar más fechas y mensajes si es necesario
   };
 
@@ -18,9 +24,11 @@ function Calendario() {
 
     const message = messagesByDate[clickedDate];
     if (message) {
-      document.getElementById('mensaje').innerText = message;
+      document.getElementById('titulo').innerText = message.title;
+      document.getElementById('descripcion').innerText = message.description;
     } else {
-      document.getElementById('mensaje').innerText = 'No hay mensaje para esta fecha.';
+      document.getElementById('titulo').innerText = '';
+      document.getElementById('descripcion').innerText = '';
     }
   };
 
@@ -36,7 +44,10 @@ function Calendario() {
         onClickDay={handleDateClick}
         tileClassName={tileClassName}
       />
-      <div id="mensaje"></div>
+      <div id="mensaje">
+        <h2 id="titulo"></h2>
+        <p id="descripcion"></p>
+      </div>
     </div>
   );
 }
