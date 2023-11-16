@@ -2,7 +2,7 @@ import Calendar from 'react-calendar';
 import { useState } from 'react';
 import 'react-calendar/dist/Calendar.css';
 import './Sample.css';
-import messagesByDate, { Message } from './messagesByDate'; // Ruta al archivo messages.ts
+import messagesByDate, {Message} from './messagesByDate'; 
 
 function Calendario() {
   const [selectedMessage, setSelectedMessage] = useState<Message | null>(null);
