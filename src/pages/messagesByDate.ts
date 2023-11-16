@@ -2,7 +2,7 @@
 interface Message {
   title: string;
   description: string;
-  imageUrl: string; // Nueva propiedad para la URL de la imagen
+  imageUrl?: string; // Nueva propiedad opcional para la URL de la imagen
 }
 
 const messagesByDate: { [key: string]: Message } = {
