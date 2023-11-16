@@ -9,12 +9,12 @@ const messagesByDate: { [key: string]: Message } = {
   '11-15': {
     title: '¡Hiciste clic en el 15 de noviembre!',
     description: 'Descripción para el 15 de noviembre',
-    imageUrl: 'src/assets/tren.jpg',
+    imageUrl: '../src/assets/tren.jpg',
   },
   '11-16': {
     title: '¡Hiciste clic en el 16 de noviembre!',
     description: 'Descripción para el 16 de noviembre',
-    imageUrl: 'src/assets/tren.jpg',
+    imageUrl: '../src/assets/tren.jpg',
   },
   // Puedes agregar más fechas y mensajes con imágenes si es necesario
 };
