@@ -20,3 +20,5 @@ const messagesByDate: { [key: string]: Message } = {
 };
 
 export default messagesByDate;
+
+export type { Message };
