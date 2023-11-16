@@ -7,7 +7,6 @@ interface Message {
 
 const messagesByDate: { [key: string]: Message } = {
 
-  },
   '1-23': {
     title: '¡Hiciste clic en el 23 de enero!',
     description: '23 de enero de 1945, con el decreto 1940 Perón establece el derecho a los trabajadores del goce de vacaciones pagas.',
