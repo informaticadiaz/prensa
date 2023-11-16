@@ -6,16 +6,7 @@ interface Message {
 }
 
 const messagesByDate: { [key: string]: Message } = {
-  // Las fechas que quieres agregar con imageUrl consistente
-  '1-12': {
-    title: '¡Hiciste clic en el 12 de enero!',
-    description: '12 de enero de 1984, concesión del 1er ferrocarril en Argentina.',
-    imageUrl: '/public/tren.jpg',
-  },
-  '1-14': {
-    title: '¡Hiciste clic en el 14 de enero!',
-    description: '14 de enero de 1951, Perón inaugura más de 40 escuelas sindicales en todo el país',
-    imageUrl: '/public/tren.jpg',
+
   },
   '1-23': {
     title: '¡Hiciste clic en el 23 de enero!',
