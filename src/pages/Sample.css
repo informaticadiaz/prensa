@@ -1,6 +1,7 @@
 .react-calendar {
-  background: #242424;;
+  background: #242424;
   color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
 }
 
 .react-calendar__navigation__arrow {
@@ -15,7 +16,7 @@ button {
   color: rgba(255, 255, 255, 0.7);
 }
 
-button:hover{
+button:hover {
   color: black;
 }
 
@@ -34,3 +35,9 @@ button:hover{
 .custom-day {
   background-color: green; /* Cambia el color según tus preferencias */
 }
+
+.calendar-image {
+  width: 350px;
+  background: 350px;
+}
+
