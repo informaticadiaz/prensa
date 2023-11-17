@@ -21,7 +21,6 @@ function Calendario() {
   return (
     <div className='flex-calendar'>
       <div>
-      <h1>Calendario</h1>
       <Calendar onClickDay={handleDateClick} tileClassName={tileClassName} />
       </div>
       <div id="mensaje">
