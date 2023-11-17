@@ -1,0 +1,47 @@
+.react-calendar {
+  background: #242424;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+}
+
+.react-calendar__navigation__arrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.react-calendar__navigation__label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button:hover {
+  color: black;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: unset;
+}
+
+.react-calendar__tile--now {
+  background: unset;
+}
+
+.react-calendar__tile--now:hover {
+  background: unset;
+}
+
+.custom-day {
+  background-color: green; /* Cambia el color según tus preferencias */
+}
+
+.calendar-image {
+  margin-top: 10px;
+  width: 350px;
+  background: 350px;
+}
+
+#mensaje {
+ width: 350px;
+}

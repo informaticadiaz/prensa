@@ -6,13 +6,16 @@ import {
 import { createRoot } from 'react-dom/client'
 import { Auth0Provider } from "@auth0/auth0-react";
 
-import './index.css'
-
 import App from './App.tsx'
-import Desing from './pages/Desing.tsx';
 import Psa from './pages/Psa.tsx';
 import Revistas from './pages/Revistas.tsx';
 import Entrevistas from './pages/Entrevistas.tsx';
+import Podcast from './pages/Podcast.tsx';
+import Videoteca from './pages/Videoteca.tsx';
+import Calendario from './pages/Calendario.tsx';
+
+import './index.css'
+import './index.css'
 
 const root = createRoot(document.getElementById('root')!);
 
@@ -20,10 +23,6 @@ const router = createHashRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "/desing",
-    element: <Desing />,
   },
   {
     path: "/psa",
@@ -36,8 +35,19 @@ const router = createHashRouter([
   {
     path: "/entrevistas",
     element: <Entrevistas />,
-  }
-  
+  },
+  {
+    path: "/podcast",
+    element: <Podcast />,
+  },
+  {
+    path: "/videoteca",
+    element: <Videoteca />,
+  },
+  {
+    path: "/calendario",
+    element: <Calendario />,   
+  }  
 ]);
 
 root.render(
