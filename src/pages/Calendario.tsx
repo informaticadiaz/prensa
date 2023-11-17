@@ -21,14 +21,11 @@ function Calendario() {
   return (
     <div className='flex-calendar'>
       <div>
-      <h1>Calendario</h1>
-      <p>Selecciona una fecha para ver el mensaje correspondiente.</p>
       <Calendar onClickDay={handleDateClick} tileClassName={tileClassName} />
       </div>
       <div id="mensaje">
         {selectedMessage && (
           <>
-            <h2>{selectedMessage.title}</h2>
             <img src={selectedMessage.imageUrl} alt="Imagen" className="calendar-image"/>
             <p>{selectedMessage.description}</p>
           </>
