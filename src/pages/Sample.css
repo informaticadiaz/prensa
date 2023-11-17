@@ -37,7 +37,11 @@ button:hover {
 }
 
 .calendar-image {
+  margin-top: 10px;
   width: 350px;
   background: 350px;
 }
 
+#mensaje {
+ width: 350px;
+}
