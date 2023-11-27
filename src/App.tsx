@@ -1,15 +1,71 @@
 import { Link } from 'react-router-dom';
 
+import SideBarMenu from './components/SideBarMenu';
+
+import { SideBarMenuItem, SideBarMenuCard } from './types/types';
+
 import logo from './assets/logo.webp'
+import profileImage from "./assets/bill.jpeg";
+
+import { 
+  FcCustomerSupport,
+  FcVideoProjector,
+  FcCalendar,
+  FcCamcorder,
+  FcMusic,
+ } from "react-icons/fc";
+
+
 
 
 import './App.css'
 
 function App() {
 
+  const items:SideBarMenuItem[] = [
+    {
+      id: '1',
+      label: 'PSA',
+      icon: FcCustomerSupport,
+      url: '/'
+    },
+    {
+      id: '2',
+      label: 'Videoteca',
+      icon: FcVideoProjector,
+      url: '/'
+    },
+    {
+      id: '3',
+      label: 'Calendario',
+      icon: FcCalendar,
+      url: '/'
+    },
+    {
+      id: '4',
+      label: 'Entrevistas',
+      icon: FcCamcorder,
+      url: '/'
+    },
+    {
+      id: '5',
+      label: 'Podcast',
+      icon: FcMusic,
+      url: '/'
+    }
+  ];
+  const card: SideBarMenuCard = {
+    id: 'card01',
+    displayName: 'Ignacio Diaz',
+    title: 'Frontend Developer',
+    photoUrl: profileImage,
+    url: '/',
+  }
 
   return (
     <>
+      <SideBarMenu items={items} card={card} />
+      <div className='home'></div>
       <div>
         <a href="http://prensa.ar" target="_blank">
           <img src={logo} className="logo react" alt="logo uf" />
