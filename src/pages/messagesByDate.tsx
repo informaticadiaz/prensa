@@ -366,8 +366,8 @@ const messagesByDate: { [key: string]: Message } = {
   },
   '11-22': {
     title: '¡Hiciste clic en el 22 de noviembre!',
-    description: '22 de noviembre, Día de la música.',
-    imageUrl: 'tren.jpg',
+    description: '22 de noviembre de  1949, Se establece la Gratuidad universitaria.',
+    imageUrl: '11-22.jpeg',
   },
   '11-25': {
     title: '¡Hiciste clic en el 25 de noviembre!',
