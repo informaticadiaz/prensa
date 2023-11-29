@@ -1,8 +1,3 @@
-.flex-calendar {
-  display: flex;
-  gap: 30px;
-}
-
 .react-calendar {
   background: #242424;
   color: rgba(255, 255, 255, 0.7);
@@ -38,14 +33,33 @@ button:hover {
 }
 
 .custom-day {
-  background-color: green; /* Cambia el color según tus preferencias */
+  background-color: green;
+  /* Cambia el color según tus preferencias */
 }
 
 .calendar-image {
-  width: 500px;
-  background: 500px;
+  width: 350px;
+  background: 350px;
+  margin-top: 10px;
 }
 
 #mensaje {
- width: 350px;
+  width: 350px;
+}
+
+
+
+@media screen and (min-width: 800px) {
+  .flex-calendar {
+    display: flex;
+    gap: 30px;
+  }
+
+
+  .calendar-image {
+    width: 500px;
+    background: 500px;
+    margin-top: 0;
+  }
+
 }
