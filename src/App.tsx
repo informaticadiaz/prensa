@@ -5,7 +5,7 @@ import SideBarMenu from './components/SideBarMenu';
 import { SideBarMenuItem, SideBarMenuCard } from './types/types';
 
 import logo from './assets/logo.webp'
-import profileImage from "./assets/bill.jpeg";
+import profileImage from "./assets/logo.webp";
 
 import { 
   FcCustomerSupport,
@@ -56,8 +56,8 @@ function App() {
   ];
   const card: SideBarMenuCard = {
     id: 'card01',
-    displayName: 'Ignacio Diaz',
-    title: 'Frontend Developer',
+    displayName: '',
+    title: '',
     photoUrl: profileImage,
     url: '/',
   }
