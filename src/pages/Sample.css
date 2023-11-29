@@ -1,3 +1,8 @@
+.flex-calendar {
+  display: flex;
+  gap: 30px;
+}
+
 .react-calendar {
   background: #242424;
   color: rgba(255, 255, 255, 0.7);
@@ -37,7 +42,6 @@ button:hover {
 }
 
 .calendar-image {
-  margin-top: 10px;
   width: 350px;
   background: 350px;
 }
