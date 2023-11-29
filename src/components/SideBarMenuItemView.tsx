@@ -15,7 +15,7 @@ function SideBarMenuItemView({
     <div className="SideBarMenuItem">
       <a href={item.url}>
         <div className={classNames('ItemContent', isOpen ? '': 'collapsed')}>
-          <div className="icon">
+          <div className="icon" style={{ fontSize: '32px' }}>
             <item.icon />
           </div>
           <span className="label">{item.label}</span>
