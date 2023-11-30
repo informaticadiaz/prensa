@@ -5,11 +5,13 @@
   text-align: center;
 }
 
+.main-layout {
+  margin-left: 50px;
+}
+
 .logo {
   height: 20vh;
   padding: 5vw;
-  will-change: filter;
-  transition: filter 300ms;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
