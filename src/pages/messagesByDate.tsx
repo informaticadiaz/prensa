@@ -7,6 +7,16 @@ interface Message {
 
 const messagesByDate: { [key: string]: Message } = {
 
+  '1-12': {
+    title: '¡Hiciste clic en el 12 de enero!',
+    description: '12 de enero de 1984, Concesión del 1er ferrocarril en argentina.',
+    imageUrl: 'tren.jpg',
+  },
+  '1-14': {
+    title: '¡Hiciste clic en el 14 de enero!',
+    description: '14 de enero de 1951, Perón inagura mas de 40 escuelas sindicales en todo el país.',
+    imageUrl: 'tren.jpg',
+  },  
   '1-23': {
     title: '¡Hiciste clic en el 23 de enero!',
     description: '23 de enero de 1945, con el decreto 1940 Perón establece el derecho a los trabajadores del goce de vacaciones pagas.',
@@ -19,7 +29,7 @@ const messagesByDate: { [key: string]: Message } = {
   },
   '2-24': {
     title: '¡Hiciste clic en el 24 de febrero!',
-    description: '24 de febrero de 1946, Perón gana las primeras elecciones. 24 de febrero año 1947) Perón proclama los derechos del trabajador.',
+    description: '24 de febrero de 1946, Perón gana las primeras elecciones. 24 de febrero año 1947, Perón proclama los derechos del trabajador.',
     imageUrl: 'tren.jpg',
   },
   '2-25': {
@@ -187,7 +197,7 @@ const messagesByDate: { [key: string]: Message } = {
     },
     '6-28': {
       title: '¡Hiciste clic en el 28 de junio!',
-      description: '28 de junio, día del orgullo LGBTTIQ+.',
+      description: '28 de junio de 1973, Perón vuelve a la Argentina.',
       imageUrl: 'tren.jpg',
     },
     // Julio
@@ -218,7 +228,7 @@ const messagesByDate: { [key: string]: Message } = {
   },
   '7-29': {
     title: '¡Hiciste clic en el 29 de julio!',
-    description: '29 de julio de 1966 Noche de los bastones largos.',
+    description: '29 de julio de 1966, Noche de los bastones largos.',
     imageUrl: 'tren.jpg',
   },
   // Agosto
@@ -356,8 +366,8 @@ const messagesByDate: { [key: string]: Message } = {
   },
   '11-22': {
     title: '¡Hiciste clic en el 22 de noviembre!',
-    description: '22 de noviembre, Día de la música.',
-    imageUrl: 'tren.jpg',
+    description: '22 de noviembre de  1949, Se establece la Gratuidad universitaria.',
+    imageUrl: '11-22.jpeg',
   },
   '11-25': {
     title: '¡Hiciste clic en el 25 de noviembre!',
