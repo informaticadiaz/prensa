@@ -7,6 +7,7 @@ import logo from './assets/logo.webp'
 
 
 import './App.css'
+import './index.css'
 
 function App() {
 
