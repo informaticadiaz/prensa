@@ -3,6 +3,7 @@ import { useState } from 'react';
 import 'react-calendar/dist/Calendar.css';
 import './Sample.css';
 import messagesByDate, {Message} from './messagesByDate'; 
+import MainLayout from '../Layout/MainLayout';
 
 function Calendario() {
   const [selectedMessage, setSelectedMessage] = useState<Message | null>(null);
@@ -19,6 +20,8 @@ function Calendario() {
   };
 
   return (
+    <>
+    <MainLayout>
     <div className='flex-calendar'>
       <div>
       <Calendar onClickDay={handleDateClick} tileClassName={tileClassName} />
@@ -32,6 +35,8 @@ function Calendario() {
         )}
       </div>
     </div>
+    </MainLayout>
+    </>
   );
 }
 
