@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.main-layout {
+  margin-left: 50px;
+}
+
 .logo {
   height: 20vh;
   padding: 5vw;
