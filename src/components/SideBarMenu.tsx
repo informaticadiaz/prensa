@@ -14,7 +14,7 @@ interface SideBarMenuProps {
 }
 
 function SideBarMenu({ items, card }: SideBarMenuProps) {
-  const [ isOpen, setIsOpen ] = useState<boolean>(true);
+  const [ isOpen, setIsOpen ] = useState<boolean>(false);
   
   function handleClick() {
     setIsOpen(!isOpen);
