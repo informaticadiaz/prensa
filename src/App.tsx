@@ -8,6 +8,7 @@ import logo from './assets/logo.webp'
 
 import './App.css'
 import './index.css'
+import Inflacion from './components/Inflacion';
 
 function App() {
 
