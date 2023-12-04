@@ -1,5 +1,5 @@
-import { SideBarMenuCard } from "../types/types"
-import { classNames } from "../util/classes"
+import { SideBarMenuCard } from "../../types/types"
+import { classNames } from "../../util/classes"
 import "./SideBarMenuCardView.scss"
 
 import { Link } from 'react-router-dom';

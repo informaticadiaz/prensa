@@ -1,8 +1,8 @@
-import { SideBarMenuCard, SideBarMenuItem } from "../types/types";
+import { SideBarMenuCard, SideBarMenuItem } from "../../types/types";
 import SideBarMenuCardView from "./SideBarMenuCardView";
 import SideBarMenuItemView from "./SideBarMenuItemView";
 import { useState } from "react";
-import { classNames } from "../util/classes";
+import { classNames } from "../../util/classes";
 import  {VscMenu} from "react-icons/vsc";
 
 import './SideBarMenu.scss';
