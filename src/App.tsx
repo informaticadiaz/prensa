@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import MainLayout from './Layout/MainLayout';
 
 import logo from './assets/logo.webp'
