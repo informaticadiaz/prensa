@@ -1,4 +1,4 @@
-import SideBarMenu from "../components/SideBarMenu";
+import SideBarMenu from "./SideBarMenu/SideBarMenu";
 
 
 import { SideBarMenuItem, SideBarMenuCard } from "../types/types";
@@ -11,6 +11,7 @@ import {
   FcCalendar,
   FcCamcorder,
   FcMusic,
+  FcBullish,
  } from "react-icons/fc";
 
 
@@ -27,27 +28,33 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
     },
     {
       id: "2",
-      label: "Videoteca",
-      icon: FcVideoProjector,
-      url: "/#videoteca",
+      label: "Economia",
+      icon: FcBullish,
+      url: "/#economia",
     },
     {
       id: "3",
-      label: "Calendario",
-      icon: FcCalendar,
-      url: "/#calendario",
-    },
-    {
-      id: "4",
       label: "Entrevistas",
       icon: FcCamcorder,
       url: "/#entrevistas",
     },
     {
-      id: "5",
+      id: "4",
       label: "Podcast",
       icon: FcMusic,
       url: "/#podcast",
+    },
+    {
+      id: "5",
+      label: "Calendario",
+      icon: FcCalendar,
+      url: "/#calendario",
+    },
+    {
+      id: "6",
+      label: "Videoteca",
+      icon: FcVideoProjector,
+      url: "/#videoteca",
     },
   ];
 
