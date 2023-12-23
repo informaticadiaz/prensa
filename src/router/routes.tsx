@@ -1,12 +1,13 @@
 
 import App from '../App.tsx';
-import Psa from '../pages/Psa.tsx';
+import Pas from '../pages/Pas.tsx';
 import Revistas from '../pages/Revistas.tsx';
 import Entrevistas from '../pages/Entrevistas.tsx';
 import Podcast from '../pages/Podcast.tsx';
 import Videoteca from '../pages/Videoteca.tsx';
 import Calendario from '../pages/Calendario.tsx';
 import Economia from '../pages/Economia.tsx';
+import Legales from '../pages/Legales.tsx';
 
 const routes = [
   {
@@ -14,8 +15,8 @@ const routes = [
     element: <App />,
   },
   {
-    path: '/psa',
-    element: <Psa />,
+    path: '/pas',
+    element: <Pas />,
   },
   {
     path: '/economia',
@@ -41,6 +42,10 @@ const routes = [
     path: '/calendario',
     element: <Calendario />,
   },
+  {
+    path: '/legales',
+    element: <Legales />,
+  }
 ];
 
 export default routes;

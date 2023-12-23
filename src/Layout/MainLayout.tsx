@@ -12,6 +12,7 @@ import {
   FcCamcorder,
   FcMusic,
   FcBullish,
+  FcBusinessman,
  } from "react-icons/fc";
 
 
@@ -22,36 +23,42 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const items: SideBarMenuItem[] = [
     {
       id: "1",
-      label: "PSA",
+      label: "PAS",
       icon: FcCustomerSupport,
-      url: "/#psa",
+      url: "/#pas",
     },
     {
       id: "2",
+      label: "Legales",
+      icon: FcBusinessman,
+      url: "/#legales",
+    },
+    {
+      id: "3",
       label: "Economia",
       icon: FcBullish,
       url: "/#economia",
     },
     {
-      id: "3",
+      id: "4",
       label: "Entrevistas",
       icon: FcCamcorder,
       url: "/#entrevistas",
     },
     {
-      id: "4",
+      id: "5",
       label: "Podcast",
       icon: FcMusic,
       url: "/#podcast",
     },
     {
-      id: "5",
+      id: "6",
       label: "Calendario",
       icon: FcCalendar,
       url: "/#calendario",
     },
     {
-      id: "6",
+      id: "7",
       label: "Videoteca",
       icon: FcVideoProjector,
       url: "/#videoteca",

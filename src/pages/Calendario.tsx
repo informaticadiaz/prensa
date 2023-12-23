@@ -30,7 +30,7 @@ function Calendario() {
       <div id="mensaje">
         {selectedMessage && (
           <>
-            <img src={selectedMessage.imageUrl} alt="Imagen" className="calendar-image"/>
+            {/* <img src={selectedMessage.imageUrl} alt="Imagen" className="calendar-image"/> */}
             <p>{selectedMessage.description}</p>
           </>
         )}

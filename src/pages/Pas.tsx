@@ -1,13 +1,13 @@
 import MainLayout from "../Layout/MainLayout"
 
-function Psa() {
+function Pas() {
   return (
     <>
     <MainLayout>
-    <div>psa</div>
+    <h1>Plan de Accion Social</h1>
     </MainLayout>
     </>
   )
 }
 
-export default Psa
+export default Pas
