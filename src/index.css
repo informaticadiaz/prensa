@@ -28,9 +28,6 @@ a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: inherit;
 }
-a:hover {
-  color: rgba(255, 255, 255, 0.4);
-}
 
 body {
   margin: 0;
