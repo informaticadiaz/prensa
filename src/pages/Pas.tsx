@@ -52,24 +52,24 @@ function Pas() {
         <div className="flex flex-col w-screen h-screen items-center">
           <div className="p-4">
             <h1 className="text-2xl font-bold text-blue-300">Plan de acción social</h1>
-            <p className="text-blue-300 mt-2">Formularios del plan de acción social</p>
+
           </div>
 
           <div className="flex space-x-4 mb-4">
             <button
-              className={`bg-green-700 hover:bg-green-800 text-slate-300 hover:text-slate-400 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${activeTab === 1 ? 'border-b-2 border-green-900' : ''}`}
+              className={`bg-greenUF hover:bg-greenUF6 text-slate-300 hover:text-slate-400 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${activeTab === 1 ? 'border-b-2 border-greenUF' : ''}`}
               onClick={() => changeTab(1)}
             >
               Beneficios
             </button>
             <button
-              className={`bg-green-700 hover:bg-green-800 text-slate-300 hover:text-slate-400 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${activeTab === 2 ? 'border-b-2 border-green-900' : ''}`}
+              className={`bg-greenUF hover:bg-greenUF6 text-slate-300 hover:text-slate-400 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${activeTab === 2 ? 'border-b-2 border-greenUF' : ''}`}
               onClick={() => changeTab(2)}
             >
               Formularios
             </button>
             <button
-              className={`bg-green-700 hover:bg-green-800 text-slate-300 hover:text-slate-400 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${activeTab === 3 ? 'border-b-2 border-green-900' : ''}`}
+              className={`bg-greenUF hover:bg-greenUF6 text-slate-300 hover:text-slate-400 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${activeTab === 3 ? 'border-b-2 border-greenUF' : ''}`}
               onClick={() => changeTab(3)}
             >
               Contacto
@@ -81,16 +81,19 @@ function Pas() {
           <div className="tab-content mt-4 ">
             {activeTab === 1 && <div><h1>Beneficios</h1></div>}
             {activeTab === 2 && (
-              <table className="w-full divide-y divide-gray-200 mt-5">
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {pas.map((pasItem, index) => (
-                    <tr key={index}>
-                      <td className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{pasItem.content}</td>
-                      <td className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"><a href={pasItem.url} className="text-gray-500">Descargar Formulario</a></td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div>
+                <p className="text-blue-300 mt-2">Formularios del plan de acción social</p>
+                <table className="w-full divide-y divide-gray-200 mt-5 rounded-xl overflow-hidden">
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {pas.map((pasItem, index) => (
+                      <tr key={index}>
+                        <td className="px-6 py-3 bg-greenUF text-left text-xs leading-4 font-bold text-slate-300 uppercase tracking-wider">{pasItem.content}</td>
+                        <td className="px-6 py-3 bg-greenUF text-left text-xs leading-4 font-bold text-slate-300 uppercase tracking-wider"><a href={pasItem.url} className="font-bold text-slate-300">Descargar Formulario</a></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             )}
             {activeTab === 3 && <div><h1>Contacto</h1></div>}
           </div>
