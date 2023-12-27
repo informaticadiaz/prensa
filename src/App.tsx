@@ -14,7 +14,6 @@ function App() {
   return (
     <>
       <MainLayout>
-      <div className='home'></div>
       <div>
         <a href="http://prensa.ar" target="_blank">
           <img src={logo} className="logo react" alt="logo uf" />

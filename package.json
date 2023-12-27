@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.3",
+    "@headlessui/react": "^1.7.17",
     "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
