@@ -17,52 +17,47 @@ function Pas() {
   };
 
   let [categories] = useState({
-    Recent: [
+    Utiles: [
       {
         id: 1,
         title: 'Does drinking coffee make you smarter?',
+        requisitoUno: '• Entrega de solicitud hasta el 31/5 de cada año.',
+        requisitoDos: '• Certificado de alumno regular del año en curso.',
+        requisitoTres: '• En caso de alumnos de 1° año, fotocopia de boletín de 6° ó 7° (según Plan Escolar) Constancia si adeuda o no materias (para el resto de los años)',
+        requisitoCuatro: '• Estar adherido al Plan de Acción Social (P.A.S.)',
+        requisitoCinco: '• Adjuntar CBU',
         date: '5h ago',
         commentCount: 5,
         shareCount: 2,
       },
-      {
-        id: 2,
-        title: "So you've bought coffee... now what?",
-        date: '2h ago',
-        commentCount: 3,
-        shareCount: 2,
-      },
     ],
-    Popular: [
+    'Estimulo Secundario': [
       {
         id: 1,
         title: 'Is tech making coffee better or worse?',
+        requisitoUno: '• Entrega de solicitud hasta el 31/5 de cada año.',
+        requisitoDos: '• Certificado de alumno regular del año en curso.',
+        requisitoTres: '• En caso de alumnos de 1° año, fotocopia de boletín de 6° ó 7° (según Plan Escolar) Constancia si adeuda o no materias (para el resto de los años)',
+        requisitoCuatro: '• Estar adherido al Plan de Acción Social (P.A.S.)',
+        requisitoCinco: '• Adjuntar CBU',
         date: 'Jan 7',
         commentCount: 29,
         shareCount: 16,
       },
-      {
-        id: 2,
-        title: 'The most innovative things happening in coffee',
-        date: 'Mar 19',
-        commentCount: 24,
-        shareCount: 12,
-      },
+
     ],
-    Trending: [
+    'Estudios Terciarios': [
       {
         id: 1,
         title: 'Ask Me Anything: 10 answers to your questions about coffee',
+        requisitoUno: '• Entrega de solicitud hasta el 31/5 de cada año.',
+        requisitoDos: '• Certificado de alumno regular del año en curso.',
+        requisitoTres: '• En caso de alumnos de 1° año, fotocopia de boletín de 6° ó 7° (según Plan Escolar) Constancia si adeuda o no materias (para el resto de los años)',
+        requisitoCuatro: '• Estar adherido al Plan de Acción Social (P.A.S.)',
+        requisitoCinco: '• Adjuntar CBU',
         date: '2d ago',
         commentCount: 9,
         shareCount: 5,
-      },
-      {
-        id: 2,
-        title: "The worst advice we've ever heard about coffee",
-        date: '4d ago',
-        commentCount: 1,
-        shareCount: 2,
       },
     ],
   })
@@ -140,16 +135,16 @@ function Pas() {
                 <div className="px-2 py-16 sm:px-0">
                   <Tab.Group>
                     <div className="flex">
-                      <Tab.List className="flex flex-col space-y-1 mr-4 rounded-xl bg-blue-900/20 p-1 w-[20vw]">
+                      <Tab.List className="flex flex-col space-y-1 mr-4 rounded-xl bg-greenUF p-1 w-[20vw]">
                         {Object.keys(categories).map((category) => (
                           <Tab
                             key={category}
                             className={({ selected }) =>
                               classNames(
                                 'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
-                                'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                                'ring-white/60 ring-offset-2 ring-offset-greenUF focus:outline-none focus:ring-2',
                                 selected
-                                  ? 'bg-white text-blue-700 shadow'
+                                  ? 'bg-white text-greenUF shadow'
                                   : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
                               )
                             }
@@ -163,20 +158,35 @@ function Pas() {
                           <Tab.Panel
                             key={idx}
                             className={classNames(
-                              'rounded-xl bg-white p-3',
+                              'rounded-xl bg-greenUF p-3',
                               'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
                             )}
                           >
-                            <ul>
-                              {posts.map((post) => (
-                                <li
-                                  key={post.id}
-                                  className="relative rounded-md p-3 hover:bg-gray-100"
-                                >
-                                  {/* Contenido de cada pestaña */}
-                                </li>
-                              ))}
-                            </ul>
+              <ul>
+                {posts.map((post) => (
+                  <li
+                    key={post.id}
+                    className="relative rounded-md p-3 hover:bg-gray-100"
+                  >
+                    <ul className="mt-1 space-x-1 text-xs font-bold leading-4">
+                      <p>{post.requisitoUno}</p>
+                      <p>{post.requisitoDos}</p>
+                      <p>{post.requisitoTres}</p>
+                      <p>{post.requisitoCuatro}</p>
+                      <p>{post.requisitoCinco}</p>
+
+                    </ul>
+
+                    <a
+                      href="#"
+                      className={classNames(
+                        'absolute inset-0 rounded-md',
+                        'ring-blue-400 focus:z-10 focus:outline-none focus:ring-2'
+                      )}
+                    />
+                  </li>
+                ))}
+              </ul>
                           </Tab.Panel>
                         ))}
                       </Tab.Panels>
