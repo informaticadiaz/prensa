@@ -2,7 +2,6 @@ import MainLayout from "../Layout/MainLayout"
 import { useState } from 'react';
 import { Tab } from '@headlessui/react'
 
-
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
@@ -104,13 +103,11 @@ function Pas() {
     }
   ]
 
-
-
   return (
     <>
       <MainLayout>
+        <div className="flex flex-col items-center">
 
-        <div className="flex flex-col w-[80%] h-screen items-center mx-16">
           <div className="p-4">
             <h1 className="text-2xl font-bold text-blue-300">Plan de acción social</h1>
           </div>
@@ -136,16 +133,14 @@ function Pas() {
             </button>
           </div>
 
-
-
-          <div className="tab-content mt-4 w-4/5 ">
+          <div className="tab-content mt-4">
             {activeTab === 1 && (
               <div>
                 <h1>Beneficios</h1>
                 <div className="px-2 py-16 sm:px-0">
                   <Tab.Group>
                     <div className="flex">
-                      <Tab.List className="flex flex-col space-y-1 mr-4 rounded-xl bg-blue-900/20 p-1 w-1/3">
+                      <Tab.List className="flex flex-col space-y-1 mr-4 rounded-xl bg-blue-900/20 p-1 w-[20vw]">
                         {Object.keys(categories).map((category) => (
                           <Tab
                             key={category}
@@ -163,7 +158,7 @@ function Pas() {
                           </Tab>
                         ))}
                       </Tab.List>
-                      <Tab.Panels className="mt-2 w-2/3">
+                      <Tab.Panels className="mt-2 w-[60vw]">
                         {Object.values(categories).map((posts, idx) => (
                           <Tab.Panel
                             key={idx}
@@ -207,10 +202,14 @@ function Pas() {
                 </table>
               </div>
             )}
-            {activeTab === 3 && <div><h1>Contacto</h1></div>}
+            {activeTab === 3 && (
+              <div>
+                <h1>Contacto</h1>
+              </div>
+            )}
           </div>
-        </div>
 
+        </div>
       </MainLayout>
     </>
   )
