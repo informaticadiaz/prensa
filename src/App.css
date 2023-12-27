@@ -14,11 +14,11 @@
 }
 
 .main-layout {
-  margin-left: 50px;
+  padding: 50px;
 }
 
 .logo {
-  height: 20vh;
+  width: 60vh;
   padding: 5vw;
 }
 .logo:hover {
