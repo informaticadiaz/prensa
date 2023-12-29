@@ -39,7 +39,6 @@ function Formularios() {
 
   return (
     <div>
-                <p className="text-blue-300 mt-2">Formularios del plan de acción social</p>
                 <table className="w-full divide-y divide-gray-200 mt-5 rounded-xl overflow-hidden">
                   <tbody className="bg-white divide-y divide-gray-200">
                     {pas.map((pasItem, index) => (

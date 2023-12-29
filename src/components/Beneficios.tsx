@@ -5,10 +5,8 @@ function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-
-// ... (código previo)
-
 function Beneficios() {
+
   const [beneficios] = useState([
     {
       title: 'Utiles',
@@ -41,6 +39,71 @@ function Beneficios() {
         '• Adjuntar CBU',
       ],
     },
+    {
+      title: 'Estudios Especiales',
+      requisitos: [
+       '• Entrega de solicitud hasta el 15/4 de cada año.',
+       '• Certificado de alumno regular extendido por Escuela Especial.',
+       '• Certificado Nacional de discapacidad o Certificado Médico con diagnóstico.',
+       '• Último recibo de haberes.',
+       '• Estar adherido al Plan de Acción Social (P.A.S.)', 
+       '• Adjuntar CBU',
+      ]
+    },
+    {
+      title: 'Regalo Por Casamiento',
+      requisitos: [
+        '10 días de estadía gratis c/media pensión en uno de nuestros Centros Turísticos, incluyendo gastos de pasaje en micro ida y vuelta.',
+        'ACLARACIÓN: en caso de que por razones de fuerza mayor, el afiliado no pueda realizarlo, se le concederá dinero en efectivo.',
+        '• Entrega de Solicitud 60 días antes.',
+        '• Turno del Registro Civil.',
+        '• Último recibo de haberes.',
+        '• Estar adherido al Plan de Acción Social (P.A.S.)',
+      ],
+    },
+    {
+      title: 'Beneficio por Luna de Miel',
+      requisitos: [
+        'Además del REGALO POR CASAMIENTO, se abonará al socio/a que contraiga nupcias el importe correspondiente.',
+        '• Entrega de Solicitud hasta 60 días posteriores al Casamiento.',
+        '• Certificado de Matrimonio.',
+        '• Último recibo de haberes.',
+        '• Estar adherido al Plan de Acción Social (P.A.S.)',
+        '• Adjuntar CBU',
+      ],
+    },
+    {
+      title: 'Regalo por Nacimiento',
+      requisitos: [
+        'Ajuar y cochecito para el recién nacido hijo de socio. ',
+        '• Entrega de solicitud 60 días antes de la fecha probable de parto.',
+        '• Certificado Pre Natal.',
+        '• Último recibo de haberes.',
+        '• Estar adherido al Plan de Acción Social (P.A.S.)',
+      ],
+    },
+    {
+      title: 'Beneficio Por Natalidad',
+      requisitos: [
+        'Además del REGALO POR NACIMIENTO se abonará por nacimiento o adopción del afiliado, el importe correspondiente. ',
+        '• Entrega de Solicitud hasta 60 días posteriores al Nacimiento o Adopción.',
+        '• Certificado de Nacimiento o Adopción.',
+        '• Último recibo de haberes.',
+        '• Estar adherido al Plan de Acción Social (P.A.S.)',
+        '• Adjuntar CBU',
+      ],
+    },
+    {
+      title: 'Mas Beneficios',
+      requisitos: [
+        'Aparte de los Beneficios ya nombrados el afiliado cuenta con los siguientes beneficios',
+        'Premio Reconociemto a Jubilados y vitalicios',
+        'Servicio de Sepelio',
+        'Prestamos Personales',
+        'Convenio Libreria',
+        <span dangerouslySetInnerHTML={{__html: '<a href="https://drive.google.com/file/d/18P0sC6kxhQACE2fWVniZLkIEOqBl-9mt/view?usp=sharing">Ver todos los beneficios aca</a>'}}></span>,
+      ],
+    }
   ]);
 
   return (
@@ -78,7 +141,7 @@ function Beneficios() {
                   <ul>
                     {category.requisitos.map((requisito, requisitoIdx) => (
                       <li key={requisitoIdx} className="rounded-md p-3">
-                        <ul className="mt-1 space-x-1 text-xs font-bold leading-4">
+                        <ul className="text-sm font-bold leading-1">
                           <p>{requisito}</p>
                         </ul>
                       </li>
