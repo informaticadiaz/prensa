@@ -21,7 +21,7 @@ function Beneficios() {
     {
       title: 'Estimulo Secundario',
       requisitos: [
-        '• Entrega de feo hasta el 31/5 de cada año.',
+        '• Entrega de hasta el 31/5 de cada año.',
         '• Certificado de alumno regular del año en curso.',
         '• En caso de alumnos de 1° año, fotocopia de boletín de 6° ó 7° (según Plan Escolar) Constancia si adeuda o no materias (para el resto de los años)',
         '• Estar adherido al Plan de Acción Social (P.A.S.)',
