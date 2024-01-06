@@ -2,6 +2,7 @@ import MainLayout from "../Layout/MainLayout"
 import { useState } from 'react';
 import Beneficios from "../components/Beneficios";
 import Formularios from "../components/Formularios";
+import Contacto from "../components/Contacto";
 
 function Pas() {
 
@@ -47,7 +48,7 @@ function Pas() {
           <div className="tab-content mt-4">
             {activeTab === 1 && (<Beneficios />)}
             {activeTab === 2 && (<Formularios />)}
-            {activeTab === 3 && (<div><h1>Contacto</h1></div>)}
+            {activeTab === 3 && (<Contacto />)}
           </div>
 
         </div>

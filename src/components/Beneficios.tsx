@@ -107,11 +107,10 @@ function Beneficios() {
   ]);
 
   return (
-    <div>
-      <div className="px-2 py-15 sm:px-0">
+    <>
         <Tab.Group>
           <div className="flex">
-            <Tab.List className="flex flex-col space-y-1 mr-4 rounded-xl bg-greenUF p-1 w-[20vw]">
+            <Tab.List className="flex flex-col mr-2 rounded-xl bg-greenUF p-1 w-[30vw]">
               {beneficios.map((category) => (
                 <Tab
                   key={category.title}
@@ -129,7 +128,7 @@ function Beneficios() {
                 </Tab>
               ))}
             </Tab.List>
-            <Tab.Panels className="mt-2 w-[60vw]">
+            <Tab.Panels className="w-[60vw]">
               {beneficios.map((category, idx) => (
                 <Tab.Panel
                   key={idx}
@@ -152,8 +151,7 @@ function Beneficios() {
             </Tab.Panels>
           </div>
         </Tab.Group>
-      </div>
-    </div>
+      </>
   );
 }
 

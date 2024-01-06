@@ -39,7 +39,7 @@ function Formularios() {
 
   return (
     <div>
-                <table className="w-full divide-y divide-gray-200 mt-5 rounded-xl overflow-hidden">
+                <table className="w-[90%] m-auto divide-y divide-gray-200 mt-5 rounded-xl overflow-hidden">
                   <tbody className="bg-white divide-y divide-gray-200">
                     {pas.map((pasItem, index) => (
                       <tr key={index}>
