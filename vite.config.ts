@@ -32,7 +32,14 @@ export default defineConfig({
             type: 'image/png',
             purpose: 'any'
           },
-      ]
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable'
+          }
+
+        ]
       },      
       registerType: 'autoUpdate',
       injectRegister: 'auto',
