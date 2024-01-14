@@ -12,7 +12,6 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
         name: 'Prensa Obrera',
         short_name: 'Prensa',
@@ -22,6 +21,7 @@ export default defineConfig({
         display: 'standalone',
         dir: 'ltr', // Agregando la dirección de izquierda a derecha (ltr)
         orientation: 'natural', // Agregando la orientación (puedes usar 'any', 'natural', 'landscape', 'portrait', etc.)
+        lang: 'es-AR',
         icons: [
           {
             src: 'pwa-192x192.png',
