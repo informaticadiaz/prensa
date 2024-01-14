@@ -13,6 +13,7 @@ export default defineConfig({
         short_name: 'Prensa',
         description: 'La Voz de los trabajadores',
         theme_color: '#222',
+        display: 'standalone',
         icons: [
           {
             src: 'pwa-192x192.png',
