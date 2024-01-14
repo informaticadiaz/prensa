@@ -19,7 +19,7 @@ export default defineConfig({
         description: 'La Voz de los trabajadores',
         theme_color: '#222',
         background_color: '#222',
-        display: 'minimal-ui',
+        display: 'standalone',
         dir: 'ltr', // Agregando la dirección de izquierda a derecha (ltr)
         orientation: 'natural', // Agregando la orientación (puedes usar 'any', 'natural', 'landscape', 'portrait', etc.)
         icons: [
