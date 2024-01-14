@@ -12,6 +12,13 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      registerType: 'autoUpdate',
+      injectRegister: 'script-defer',
+      workbox: {
+        clientsClaim: true,
+        skipWaiting: true,
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}']
+      },
       manifest: {
         name: 'Prensa Obrera',
         short_name: 'Prensa',
@@ -47,13 +54,7 @@ export default defineConfig({
           }
         ]
       },      
-      registerType: 'autoUpdate',
-      injectRegister: 'auto',
-      workbox: {
-        clientsClaim: true,
-        skipWaiting: true,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}']
-      },
+
     }),
   ],
   
