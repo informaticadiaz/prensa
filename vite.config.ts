@@ -15,6 +15,8 @@ export default defineConfig({
         theme_color: '#222',
         background_color: '#222',
         display: 'standalone',
+        dir: 'ltr', // Agregando la dirección de izquierda a derecha (ltr)
+        orientation: 'natural', // Agregando la orientación (puedes usar 'any', 'natural', 'landscape', 'portrait', etc.)
         icons: [
           {
             src: 'pwa-192x192.png',
@@ -38,7 +40,6 @@ export default defineConfig({
             type: 'image/png',
             purpose: 'maskable'
           }
-
         ]
       },      
       registerType: 'autoUpdate',
